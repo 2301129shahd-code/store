@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background-color: #f4f4f8;
+  color: #333;
+}
+
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  color: #5e3df6;
+  font-size: 1.3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #5e3df6;
+}
+
+.section-title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-size: 1.8rem;
+  color: #5e3df6;
+}
+
+/* شبكة المنتجات */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 2rem 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* البطاقة الواحدة */
+.product-card {
+
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+  height: 100%; /* للسماح لـ grid بتعديل الارتفاع */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* توزيع المحتوى بالتساوي */
+}
+
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #222;
+  min-height: 48px; /* ← تثبيت ارتفاع العنوان */
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  flex-grow: 1; /* ← يجعل الفقرة تاخد المساحة الفارغة */
+}
+
+.product-card span {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+  margin-top: auto;
+}
+.product-btn {
+  margin-top: 0.7rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+  
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-btn:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  color: #666;
+}
